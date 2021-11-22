@@ -1,0 +1,60 @@
+body{
+    background-image: url("https://cdn.britannica.com/34/153434-050-863E8023/Mount-Kilimanjaro-Tanzania.jpg");
+    background-position: center center;
+    background-size: 1920px 1080px;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Liberation Sans";
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    width: 400px;
+    background: rgba(0,0,0, 0.4);
+    border-radius: 5px;
+}
+.centeredAfrica{
+    display:flex;
+    justify-content: center;
+}
+.containerAfrica{
+    text-align: center;
+    border-radius: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 750px;
+}
+.card{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 20%;
+    height: 30px;
+    padding-bottom: 15%;
+    margin-bottom: 2%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 18px;
+    transition: 2s ease;
+    transform-style: preserve-3d;
+    display:flex;
+    justify-content: center;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front, .back{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.invis{
+    background: transparent; /* 2 cards at the final row so there's no space between Mayotte and Saint Helena */
+}
